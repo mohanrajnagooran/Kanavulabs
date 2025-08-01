@@ -73,7 +73,7 @@ const Navbar = () => {
             <li>
               <Link
             to="/contact-us"
-                className="block bg-black text-white text-center px-4 py-2 rounded-md hover:bg-gray-800 transition"
+                className="block bg-black text-white text-center px-4 py-2 rounded-md hover:bg-orange-400 transition"
               >
                 Contact Us
               </Link>
