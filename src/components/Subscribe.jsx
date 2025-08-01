@@ -3,8 +3,8 @@ import { EnvelopeIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 
 const Subscribe = () => {
   return (
-    <section className="bg-black py-12 px-4 mb-50">
-      <div className="max-w-7xl mx-auto flex px-6 flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white ">
+    <section className="bg-black py-12 px-4 md:mb-50 md:mt-20 mt-0 mb-20">
+      <div className="max-w-7xl mx-auto flex px-6 flex-col md:flex-row items-start md:items-center justify-between gap-8 text-white ">
         
         {/* Icon + Text */}
         <div className="flex items-start md:items-center gap-4">

@@ -11,7 +11,7 @@ import Companies from '../components/Companies'
 
 const Aboutus = () => {
   return (
-    <div className="sm:mt-39 mt-39">
+    <div className="sm:mt-39 mt-20">
       <Navbar/>
       <Abouthero/>
       <AboutStatsSection/>

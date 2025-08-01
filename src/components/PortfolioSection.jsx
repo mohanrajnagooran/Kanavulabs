@@ -46,48 +46,46 @@ const caseStudies = [
 
 const PortfolioSection = () => {
   return (
-    <section className="bg-white py-10 px-4 mb-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-4">Our Portfolio</h2>
-        <p className="text-center text-gray-600 text-2xl max-w-3xl mx-auto mb-12">
-          Our passionate team crafts innovative solutions for complex business
-          challenges. We partner for success through digital products.
+    <section className="bg-white py-10 px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-5xl font-bold text-center mb-6">
+          Our Portfolio
+        </h2>
+        <p className="text-center text-gray-600 text-lg sm:text-2xl max-w-3xl mx-auto mb-12">
+          Our passionate team crafts innovative solutions for complex business challenges.
+          We partner for success through digital products.
         </p>
 
-        <div className="flex flex-col space-y-16">
+        <div className="flex flex-col gap-16">
           {caseStudies.map((item, index) => (
             <div
               key={item.id}
               className={`flex flex-col-reverse md:flex-row ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
-              } items-center gap-8 md:gap-12 bg-gray-100 rounded-xl p-6`}
+              } items-center gap-8 md:gap-12 bg-gray-100 rounded-xl p-6 shadow-sm`}
             >
-              {/* Content */}
-              <div className="relative md:w-1/2 w-full">
-                {/* Logo fixed inside content box */}
-                <div className="absolute top-0 right-4 bg-white p-1 rounded-full shadow">
-                  <img
-                    src={item.logo}
-                    alt="Tech Icon"
-                    className="w-8 h-8 sm:w-10 sm:h-10"
-                  />
+              {/* Left: Content */}
+              <div className="relative md:w-1/2 w-full text-center md:text-left">
+                {/* Floating Icon */}
+                <div className="absolute -top-4 right-4 bg-white p-2 rounded-full shadow-md">
+                  <img src={item.logo} alt="Tech Icon" className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
 
-                <h2 className="text-3xl sm:text-5xl font-bold text-blue-600 mb-2">
+                <h2 className="text-xl sm:text-3xl font-bold text-blue-600 mb-2">
                   {item.company}
                 </h2>
                 <h3 className="text-2xl sm:text-3xl font-bold mb-4 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-lg sm:text-xl">{item.description}</p>
+                <p className="text-gray-700 text-base sm:text-lg">{item.description}</p>
               </div>
 
-              {/* Image */}
+              {/* Right: Image */}
               <div className="md:w-1/2 w-full">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-auto rounded-xl shadow-md object-cover"
+                  className="w-full h-auto rounded-lg shadow-lg object-cover"
                 />
               </div>
             </div>

@@ -23,23 +23,23 @@ const features = [
 
 const AgileTeamSection = () => {
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-16 px-4 mb-10">
+      <div className="max-w-7xl mx-auto">
+        {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
           We are an agile team of <br /> passionate innovators
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {features.map((item, idx) => (
             <div
               key={idx}
-              className="bg-gray-50 rounded-lg p-6 text-left hover:shadow-md transition"
+              className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition duration-300"
             >
-              {/* ✅ Render as a component, NOT as an image */}
-              <item.icon className="w-14 h-14 text-black mb-16" />
-
-              <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-              <p className="text-gray-600 text-lg">{item.description}</p>
+              <item.icon className="w-12 h-12 text-black mb-6" />
+              <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+              <p className="text-gray-600 text-base">{item.description}</p>
             </div>
           ))}
         </div>

@@ -71,12 +71,12 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <a
-                href="#"
+              <Link
+            to="/contact-us"
                 className="block bg-black text-white text-center px-4 py-2 rounded-md hover:bg-gray-800 transition"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

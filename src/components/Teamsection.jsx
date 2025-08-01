@@ -100,7 +100,7 @@ const TeamSection = () => {
           ))}
         </div>
         <div className="mt-10">
-            <button className="md:text-2xl border-2 px-8 py-2 rounded-lg">Join the team</button>
+            <button className="md:text-2xl border-2 px-8 py-2 rounded-lg hover:text-orange-400">Join the team</button>
         </div>
       </div>
     </section>

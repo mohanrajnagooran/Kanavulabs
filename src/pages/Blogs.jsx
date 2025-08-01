@@ -7,7 +7,7 @@ import Latestarticle from '../components/Latestarticle'
 
 const Blogs = () => {
   return (
-    <div className="sm:mt-39 mt-39">
+    <div className="sm:mt-39 mt-15">
       <Navbar/>
       <BlogSection/>
       <Subscribe/>

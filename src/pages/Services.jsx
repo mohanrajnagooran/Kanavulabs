@@ -10,7 +10,7 @@ import Servicestestinimonials from '../components/Servicestestinimonials'
 
 const Services = () => {
   return (
-    <div className="sm:mt-39 mt-39">
+    <div className="sm:mt-39 mt-30">
       <Navbar/>
       <Servicesform/>
       <TechnologiesSection/>

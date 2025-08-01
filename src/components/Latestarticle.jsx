@@ -1,6 +1,5 @@
-
 import React from "react";
-import blog1 from "../assets/blog1.png"; // Replace with your images
+import blog1 from "../assets/blog1.png";
 import blog2 from "../assets/blog1.png";
 import blog3 from "../assets/blog1.png";
 import blog4 from "../assets/blog1.png";
@@ -58,39 +57,38 @@ const blogPosts = [
   },
 ];
 
-
 const Latestarticle = () => {
   return (
-    <div>
-        <section className="px-4  max-w-7xl mx-auto mb-20">
-      <h2 className="text-4xl font-bold mb-10">Latest articles</h2>
+    <section className="px-4 md:px-6 max-w-7xl mx-auto mb-20">
+      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">Latest Articles</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {blogPosts.map((post) => (
-          <div key={post.id} className="bg-white">
+          <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition">
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-auto rounded-md shadow-sm"
+              className="w-full h-60 object-cover"
             />
-            <p className="text-gray-500 mt-4 text-sm">
-              {post.date} - {post.type}
-            </p>
-            <h3 className="font-semibold text-lg mt-2 leading-snug">
-              {post.title}
-            </h3>
-            <a
-              href={post.link}
-              className="text-orange-500 mt-2 inline-block hover:underline"
-            >
-              Read more
-            </a>
+            <div className="p-4">
+              <p className="text-gray-500 text-sm mb-1">
+                {post.date} - {post.type}
+              </p>
+              <h3 className="text-lg font-semibold leading-snug mb-2">
+                {post.title}
+              </h3>
+              <a
+                href={post.link}
+                className="text-orange-500 text-sm font-medium hover:underline"
+              >
+                Read more →
+              </a>
+            </div>
           </div>
         ))}
       </div>
     </section>
-    </div>
-  )
-}
+  );
+};
 
-export default Latestarticle
+export default Latestarticle;

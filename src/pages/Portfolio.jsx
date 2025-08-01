@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 const Portfolio = () => {
   return (
-    <div className="sm:mt-39 mt-39">
+    <div className="sm:mt-39 mt-20">
       <Navbar/>
       <PortfolioSection/>
       <Footer/>

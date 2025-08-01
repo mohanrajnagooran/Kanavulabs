@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Abouthero = () => {
   return (
     <section className="pt-10 mb-3 bg-white  flex items-center">
-      <div className=" mx-auto grid md:grid-cols-2 items-center gap-8">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8">
         {/* Left Image */}
         <div>
           <img src={aboutImg} alt="About Us" className="w-full h-auto" />

@@ -9,7 +9,7 @@ import Logo from '../assets/Flogo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-4 md:px-10 py-10">
+    <footer className="bg-black text-white px-4 md:px-10 py-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
         
         {/* Left: Company Info */}
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm sm:text-base">
+      <div className="border-t border-gray-700 mt-5 pt-3 text-center text-sm sm:text-base">
         © 2025 Kanavu Labs. All rights reserved.
       </div>
     </footer>
