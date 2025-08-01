@@ -6,7 +6,7 @@ export default function Testimonials() {
   return (
     <section className="relative px-6 md:px-16 py-20 bg-white overflow-hidden">
       {/* Title & Subtitle */}
-      <div className=" mx-auto text-center mb-12 grid grid-cols-2">
+      <div className=" mx-auto text-center mb-12 grid grid-cols-1">
         <h2 className="text-3xl font-bold mb-4">What our great customers say</h2>
         <p className="text-gray-600">
           We meticulously target specific keywords your audience uses, ensuring every click brings
@@ -15,7 +15,7 @@ export default function Testimonials() {
       </div>
 
       {/* Background Map */}
-      <div className="relative w-full h-[600px]">
+      <div className="relative w-full md:h-[600px] h-[200px]">
         <img
           src={worldmap} // ← replace with your actual image path
           alt="World Map"
@@ -23,21 +23,21 @@ export default function Testimonials() {
         />
 
         {/* Testimonial Cards Positioned on Map */}
-        <div className="absolute top-[15%] left-[10%] w-[250px] bg-white p-4 rounded-xl shadow">
-          <p className="text-sm font-medium">“Great quality service delivered on time”</p>
+        <div className="absolute top-[15%] left-[10%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">
+          <p className="md:text-sm text-[10px]  font-medium">“Great quality service delivered on time”</p>
         </div>
 
-        <div className="absolute top-[10%] left-[60%] w-[250px] bg-white p-4 rounded-xl shadow">
-          <p className="text-sm font-medium">“The best development agency”</p>
+        <div className="absolute top-[10%] left-[60%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">
+          <p className="md:text-sm text-[10px] font-medium">“The best development agency”</p>
         </div>
 
-        <div className="absolute top-[60%] left-[20%] w-[250px] bg-white p-4 rounded-xl shadow">
-          <p className="text-sm font-medium">“An amazing development agency”</p>
+        <div className="absolute  md:top-[60%] top-[65%] left-[20%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">
+          <p className="md:text-sm text-[10px] font-medium">“An amazing development agency”</p>
         </div>
 
-        <div className="absolute top-[65%] left-[75%] w-[250px] bg-white p-4 rounded-xl shadow">
+        <div className="absolute top-[65%] left-[75%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">
             
-          <p className="text-sm font-medium">“Highly recommended them”</p>
+          <p className="md:text-sm text-[10px] font-medium">“Highly recommended them”</p>
         </div>
       </div>
 

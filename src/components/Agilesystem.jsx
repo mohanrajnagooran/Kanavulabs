@@ -6,7 +6,7 @@ export default function Agilesystem()  {
     return(
         <section className="max-w-7xl bg-white  mx-auto px-6 mt-10 mb-15">
       {/* Top Heading */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-25">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
         <div>
           <h2 className="text-3xl md:text-4xl md:w-2xl font-bold text-black">
             We are an agile team of passionate innovators

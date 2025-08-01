@@ -42,7 +42,7 @@ export default function workflow() {
             ensuring every click brings highly relevant traffic directly to
             your site. This isn't guesswork.
           </p>
-          <span className="absolute md:top-38 top-46 right-4 text-[96px] text-gray-200 font-bold">
+          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             1
           </span>
         </div>
@@ -55,7 +55,7 @@ export default function workflow() {
             ensuring every click brings highly relevant traffic directly to
             your site. This isn't guesswork.
           </p>
-          <span className="absolute md:top-38 top-46 right-4 text-[96px] text-gray-200 font-bold">
+          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             2
           </span>
         </div>
@@ -68,7 +68,7 @@ export default function workflow() {
             ensuring every click brings highly relevant traffic directly to
             your site. This isn't guesswork.
           </p>
-          <span className="absolute md:top-38 top-46 right-4 text-[96px] text-gray-200 font-bold">
+          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             3
           </span>
         </div>
@@ -81,7 +81,7 @@ export default function workflow() {
             ensuring every click brings highly relevant traffic directly to
             your site. This isn't guesswork.
           </p>
-          <span className="absolute md:top-38 top-46 right-4 text-[96px] text-gray-200 font-bold">
+          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             4
           </span>
         </div>

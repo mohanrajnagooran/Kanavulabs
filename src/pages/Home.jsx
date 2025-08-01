@@ -12,7 +12,7 @@ import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
-    <div className="sm:mt-10 pt-40">
+    <div className="md:pt-40 pt-30">
       <Navbar />
       <Hero/>
       <Services />
@@ -22,7 +22,7 @@ const Home = () => {
       <Portfolioshow/>
       <Testimonials/>
       <Articles/>
-      <Footer/>
+        <Footer/>
     </div>
   )
 }

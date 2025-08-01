@@ -20,12 +20,12 @@ const Navbar = () => {
     const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="w-full  z-50 md:fixed fixed top-0 left-0 bg-white ">
-      <nav className="max-w-7xl mx-auto flex  items-center justify-between">
+    <header className="w-full  z-50 md:fixed fixed top-0 left-0 bg-white justify-between">
+      <nav className="max-w-7xl mx-auto flex py-2  items-center justify-between">
         {/* Logo */}
         <div className="text-xl font-bold tracking-wide">
           <Link to='/' >
-          <img src={Logo} alt="Kanavu Labs" className="h-40" />
+          <img src={Logo} alt="Kanavu Labs" className="md:h-40 h-20" />
           </Link>
         </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-black focus:outline-none"
+          className="lg:hidden text-black gap-2 p-2  focus:outline-none"
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -63,8 +63,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white px-4 py-4 shadow-md">
-          <ul className="space-y-4 text-sm font-medium">
+        <div className="md:hidden  bg-white shadow-md">
+          <ul className="space-y-3 p-2  text-sm font-medium">
             {links.map((link,index) => (
               <li key={index}>
                 <Link to={link.path}>{link.label}</Link>
