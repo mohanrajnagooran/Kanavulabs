@@ -84,7 +84,7 @@ const Servicestestinimonials = () => {
             </button>
             <button
               onClick={nextSlide}
-              className="p-3 bg-black text-white rounded-md hover:bg-gray-800 transition"
+              className="p-3 border border-black rounded-md hover:bg-black hover:text-white transition"
               aria-label="Next"
             >
               <ArrowRightIcon className="w-5 h-5" />
