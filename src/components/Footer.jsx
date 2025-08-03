@@ -48,7 +48,7 @@ const Footer = () => {
               placeholder="Enter your email address"
               className="w-full sm:w-72 px-4 py-3 rounded-md  text-black placeholder:text-sm sm:placeholder:text-base focus:outline-none"
             />
-            <button className="bg-black text-white text-sm sm:text-base font-semibold px-6 sm:px-8 py-3 rounded-md border hover:bg-orange-400 border-white transition">
+            <button className="bg-black text-white text-sm sm:text-base font-semibold px-6 sm:px-8 py-3 rounded-md border hover:bg-orange-500 border-white transition">
               Subscribe
             </button>
           </div>

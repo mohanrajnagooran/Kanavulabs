@@ -64,7 +64,7 @@ const Aboutlocation = () => {
         <div className="mt-12">
           <Link
             to="/contact-us"
-            className="inline-block px-6 py-3 bg-black text-white text-lg font-medium rounded-md hover:bg-orange-400 transition"
+            className="inline-block px-6 py-3 bg-black text-white text-lg font-medium rounded-md hover:bg-orange-500 transition"
           >
             Contact Us
           </Link>

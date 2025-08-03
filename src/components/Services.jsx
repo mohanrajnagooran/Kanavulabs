@@ -98,7 +98,7 @@ const Articles = () => {
 
         {/* Browse More Button */}
         <div className="flex justify-center">
-          <button className="border-black px-6 py-3 rounded-md border-2 hover:text-orange-400 hover:border-orange-400 transition text-lg font-semibold">
+          <button className="border-black px-6 py-3 rounded-md border-2 hover:text-orange-500 hover:border-orange-400 transition text-lg font-semibold">
             <a href="#">Browse more Services</a>
           </button>
         </div>

@@ -35,7 +35,7 @@ const AboutStatsSection = () => {
               discover and categorize your content while delivering a polished and
               engaging experience to your users.
             </p>
-            <button className="bg-black text-white text-lg sm:text-xl px-10 py-3 mt-6 rounded-md hover:bg-orange-400 transition">
+            <button className="bg-black text-white text-lg sm:text-xl px-10 py-3 mt-6 rounded-md hover:bg-orange-500 transition">
               Download our deck
             </button>
           </div>

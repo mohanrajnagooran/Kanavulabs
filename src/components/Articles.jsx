@@ -111,7 +111,7 @@ const Articles = () => {
 
         {/* Button */}
         <div className="flex justify-center mt-12">
-          <button className="border-black border-2 px-6 py-3 rounded-md hover:border-orange-400 hover:text-orange-400 transition">
+          <button className="border-black border-2 px-6 py-3 rounded-md hover:border-orange-500 hover:text-orange-500 transition">
             <a href="#" className="text-lg sm:text-xl font-semibold">
               Browse more articles
             </a>

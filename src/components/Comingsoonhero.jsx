@@ -37,7 +37,7 @@ const Comingsoonhero = () => {
               placeholder="Enter your email address"
               className="w-full sm:w-80 px-4 py-3 border border-gray-400 rounded-md focus:outline-none"
             />
-            <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-orange-400 transition font-semibold">
+            <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-orange-500 transition font-semibold">
               Subscribe
             </button>
           </div>
@@ -46,19 +46,19 @@ const Comingsoonhero = () => {
           <div className="mt-4">
             <p className="font-semibold mb-3">Follow us on social media</p>
             <div className="flex justify-center md:justify-start gap-4">
-              <a href="#" className="bg-black text-white p-3 rounded hover:opacity-80">
+              <a href="#" className="bg-black text-white p-3 rounded hover:bg-orange-500">
                 <FaFacebookF />
               </a>
-              <a href="#" className="bg-black text-white p-3 rounded hover:opacity-80">
+              <a href="#" className="bg-black text-white p-3 rounded hover:bg-orange-500">
                 <FaXTwitter />
               </a>
-              <a href="#" className="bg-black text-white p-3 rounded hover:opacity-80">
+              <a href="#" className="bg-black text-white p-3 rounded hover:bg-orange-500">
                 <FaInstagram />
               </a>
-              <a href="#" className="bg-black text-white p-3 rounded hover:opacity-80">
+              <a href="#" className="bg-black text-white p-3 rounded hover:bg-orange-500">
                 <FaLinkedinIn />
               </a>
-              <a href="#" className="bg-black text-white p-3 rounded hover:opacity-80">
+              <a href="#" className="bg-black text-white p-3 rounded hover:bg-orange-500">
                 <FaYoutube />
               </a>
             </div>

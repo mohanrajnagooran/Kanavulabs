@@ -11,10 +11,10 @@ export default function Portfolioshow() {
           Discover how we helped world-class companies in the past
         </h2>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
-          <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-orange-400 transition">
+          <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-orange-500 transition">
             Contact Us
           </button>
-          <button className="border border-black text-black px-6 py-2 rounded-md hover:border-orange-400 hover:text-orange-500 transition">
+          <button className="border border-black text-black px-6 py-2 rounded-md hover:border-orange-500 hover:text-orange-500 transition">
             Our Portfolio
           </button>
         </div>
