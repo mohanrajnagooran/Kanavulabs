@@ -15,7 +15,7 @@ export default function Speed()  {
             ensuring every click brings highly relevant traffic directly to
             your site. This isn't guesswork.
           </p>
-          <button className="border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition-all">
+          <button className="border text-white px-6 py-2 rounded-md hover:bg-orange-400 transition-all">
             Contact Us
           </button>
         </div>

@@ -7,8 +7,8 @@ const Hero = () => {
         Our passionate team crafts innovative solutions for complex business challenges. We partner for success through digital products, data-driven marketing, and expert problem-solving.
       </p>
       <div className="flex justify-center gap-4">
-        <a href="#" className="block bg-black text-white text-center px-4 py-2 rounded-md">Contact Us</a>
-        <a href="#" className="border border-black text-black text-center px-4 py-2 rounded-md">Our Services</a>
+        <a href="#" className="block bg-black hover:bg-orange-400 text-white text-center px-4 py-2 rounded-md">Contact Us</a>
+        <a href="#" className="border border-black text-black text-center  hover:text-orange-400 px-4 py-2 rounded-md">Our Services</a>
       </div>
       <div className='flex items-center justify-center'>
         <img src={Heroimage} alt="" />

@@ -24,7 +24,7 @@ const Jointeam = () => {
           </h2>
           <Link
             to="/contact-us"
-            className="inline-block px-6 py-3 bg-black text-white border border-white font-medium rounded-md hover:text-orange-400 hover:border-orange-400 transition"
+            className="inline-block px-6 py-3 bg-black text-white border border-white font-medium rounded-md hover:bg-orange-400 hover:border-white transition"
           >
             Contact Us
           </Link>

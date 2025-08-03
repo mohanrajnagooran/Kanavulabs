@@ -18,7 +18,7 @@ export default function workflow() {
             ensuring every click brings highly relevant traffic directly to
             your site. This isn't guesswork.
           </p>
-          <button className="bg-black text-white px-6 py-3 rounded-md mt-6">
+          <button className="bg-black hover:bg-orange-400 text-white px-6 py-3 rounded-md mt-6">
             Contact Us
           </button>
         </div>

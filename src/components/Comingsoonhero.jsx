@@ -37,7 +37,7 @@ const Comingsoonhero = () => {
               placeholder="Enter your email address"
               className="w-full sm:w-80 px-4 py-3 border border-gray-400 rounded-md focus:outline-none"
             />
-            <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">
+            <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-orange-400 transition">
               Subscribe
             </button>
           </div>
