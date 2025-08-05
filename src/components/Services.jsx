@@ -7,23 +7,18 @@ const Articles = () => {
   const articles = [
     {
       title: "Digital Marketing Services",
-      content: "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn't guesswork; it's a measurable strategy, giving you clear insights and control over your advertising spend. Stop paying for exposure; start paying for potential customers ready to engage.",
+      content: "we offer end-to-end digital marketing solutions designed to grow your business online. Whether you're a startup or an established brand, we help you connect with the right audience through tailored strategies and measurable results.",
       image: service1
     },
     {
       title: "Software Development",
-      content: "We go beyond basic optimization, meticulously refining your content and technical foundation. This ensures search engines effortlessly find and showcase your business, driving highly relevant potential customers directly to you. Stop competing for visibility; start dominating it.",
+      content: "Our software development services empower businesses with innovative, high-performance applications. From concept to deployment, we craft custom solutions that solve real problems, streamline operations, and accelerate your digital transformation",
       image: service2,
     },
     {
-      title: "Digital Marketing Services",
-      content: "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn't guesswork; it's a measurable strategy, giving you clear insights and control over your advertising spend. Stop paying for exposure; start paying for potential customers ready to engage.",
+      title: "AI & Emerging Tech",
+      content: "We harness the power of AI and emerging technologies to help businesses stay ahead of the curve. From intelligent automation to next-gen solutions, we turn cutting-edge innovation into real-world impact tailored to your unique challenges",
       image: service1
-    },
-    {
-      title: "Software Development",
-      content: "We go beyond basic optimization, meticulously refining your content and technical foundation. This ensures search engines effortlessly find and showcase your business, driving highly relevant potential customers directly to you. Stop competing for visibility; start dominating it.",
-      image: service2,
     },
   ];
 
@@ -59,7 +54,7 @@ const Articles = () => {
               onClick={prev}
               disabled={current === 0}
               className={`p-3 rounded-md border border-black transition ${
-                current === 0 ? "opacity-100 cursor-not-allowed" : "text-white bg-black"
+                current === 0 ? "opacity-100 " : "text-white bg-black"
               }`}
             >
               <FaArrowLeft />
@@ -68,7 +63,7 @@ const Articles = () => {
               onClick={next}
               disabled={current + visibleCount >= articles.length}
               className={`p-3 rounded-md border border-black transition ${
-                current + visibleCount >= articles.length ? "opacity-100 cursor-not-allowed" : "text-white bg-black"
+                current + visibleCount >= articles.length ? "opacity-100 " : "text-white bg-black"
               }`}
             >
               <FaArrowRight />

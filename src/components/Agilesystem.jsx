@@ -12,9 +12,7 @@ export default function Agilesystem()  {
             We are an agile team of passionate innovators
           </h2>
           <p className="text-gray-700 mt-4 md:w-2xl">
-            We meticulously target specific keywords your audience uses,
-            ensuring every click brings highly relevant traffic directly to
-            your site. This isn't guesswork.
+            We are an agile team of passionate innovators dedicated to building smart, scalable solutions. With a focus on collaboration, creativity, and cutting-edge technology, we turn challenges into opportunities that drive real impact.
           </p>
         </div>
         <button className=" bg-black text-white px-6 py-2 rounded-md mt-4 hover:bg-orange-500">
@@ -31,9 +29,7 @@ export default function Agilesystem()  {
             Affordable cost for startups and companies
           </h3>
           <p className="text-gray-700 text-sm">
-            We meticulously target specific keywords your audience uses,
-            ensuring every click brings highly relevant traffic directly to
-            your site. This isn't guesswork.
+            We offer high-quality solutions at affordable costs, tailored for startups and growing companies. Get enterprise-grade results without breaking your budget.
           </p>
         </div>
 
@@ -44,9 +40,7 @@ export default function Agilesystem()  {
             Effective and scalable infrastructure
           </h3>
           <p className="text-gray-700 text-sm">
-            We meticulously target specific keywords your audience uses,
-            ensuring every click brings highly relevant traffic directly to
-            your site. This isn't guesswork.
+            We build effective and scalable infrastructure that grows with your business. Our solutions ensure performance, reliability, and flexibility—ready to handle today’s demands and tomorrow’s growth.
           </p>
         </div>
 
@@ -57,9 +51,7 @@ export default function Agilesystem()  {
             Deliver your MVP in 4 weeks or less
           </h3>
           <p className="text-gray-700 text-sm">
-            We meticulously target specific keywords your audience uses,
-            ensuring every click brings highly relevant traffic directly to
-            your site. This isn't guesswork.
+            Launch your MVP in 4 weeks or less. We fast-track your idea into a functional product with just the right features to validate, iterate, and grow.
           </p>
         </div>
       </div>

@@ -9,8 +9,7 @@ export default function Testimonials() {
       <div className=" mx-auto text-center mb-12 grid grid-cols-1">
         <h2 className="text-3xl font-bold mb-4">What our great customers say</h2>
         <p className="text-gray-600">
-          We meticulously target specific keywords your audience uses, ensuring every click brings
-          highly relevant traffic directly to your site. This isn't guesswork.
+          Real stories from businesses we’ve helped grow 
         </p>
       </div>
 
@@ -24,11 +23,11 @@ export default function Testimonials() {
 
         {/* Testimonial Cards Positioned on Map */}
         <div className="absolute top-[15%] left-[10%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">
-          <p className="md:text-sm text-[10px]  font-medium">“Great quality service delivered on time”</p>
+          <p className="md:text-sm text-[10px]  font-medium">“Kanavu Labs helped us increase our website speed by 78%, which directly led to a 20% increase in conversions. Their technical expertise is unmatched." – Jane Doe, E-commerce Manager”</p>
         </div>
 
         <div className="absolute top-[10%] left-[60%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">
-          <p className="md:text-sm text-[10px] font-medium">“The best development agency”</p>
+          <p className="md:text-sm text-[10px] font-medium">“The team's transparent process and clear communication made our project a breeze. We couldn't be happier with our new app and the results it's generating." – John Smith, Startup Founder”</p>
         </div>
 
         <div className="absolute  md:top-[60%] top-[65%] left-[20%] md:w-[250px] w-[100px] bg-white p-4 rounded-xl shadow">

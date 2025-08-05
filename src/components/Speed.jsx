@@ -11,9 +11,7 @@ export default function Speed()  {
             Let’s work together
           </h2>
           <p className="text-gray-300 max-w-md">
-            We meticulously target specific keywords your audience uses,
-            ensuring every click brings highly relevant traffic directly to
-            your site. This isn't guesswork.
+            We adapt quickly to market changes and leverage the latest technologies to keep you ahead of the competition.
           </p>
           <button className="border text-white px-6 py-2 rounded-md hover:bg-orange-400 transition-all">
             Contact Us
