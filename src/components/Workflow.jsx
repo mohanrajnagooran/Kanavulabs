@@ -33,14 +33,14 @@ export default function workflow() {
       </div>
 
       {/* Right Section: 2x2 Grid */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Card 1 */}
         <div className="relative bg-gray-50 p-6">
           <h4 className="font-bold text-lg">Initial quote</h4>
           <p className="text-gray-700 mt-2">
             Get your project started with a free initial quote. Share your requirements, and our team will provide a tailored estimate to match your goals, timeline, and budget—no commitment required.
           </p>
-          <span className="absolute md:top-48 top-100 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
+          <span className="absolute md:top-45 top-0 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             1
           </span>
         </div>
@@ -51,7 +51,7 @@ export default function workflow() {
           <p className="text-gray-700 mt-2">
             Have a project idea? Let’s bring it to life. Share your vision with us, and we’ll help you turn it into a scalable, impactful solution tailored to your business needs.
           </p>
-          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
+          <span className="absolute md:top-45 top-0 md:right-0 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             2
           </span>
         </div>
@@ -62,7 +62,7 @@ export default function workflow() {
           <p className="text-gray-700 mt-2">
             From planning to launch, we ensure flawless execution at every stage. Our agile approach keeps your project on track, delivering quality results on time and within budget.
           </p>
-          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
+          <span className="absolute md:top-45 top-0 md:right-0 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             3
           </span>
         </div>
@@ -73,7 +73,7 @@ export default function workflow() {
           <p className="text-gray-700 mt-2">
             we launch with impact. From final testing to go-live support, we ensure a smooth, successful rollout that sets your project up for long-term success.
           </p>
-          <span className="absolute md:top-38 top-80 md:right-4 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
+          <span className="absolute md:top-45 top-0 md:right-0 right-0 md:text-[96px] text-6xl text-gray-300 font-bold">
             4
           </span>
         </div>
