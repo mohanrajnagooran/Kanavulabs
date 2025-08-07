@@ -1,7 +1,7 @@
 import Heroimage from '../assets/image 58.png'
 const Hero = () => {
   return (
-    <section className="pt-10 pb-20 px-6 text-center bg-white">
+    <section className="md:pt-10 pt-0 pb-20 px-6 text-center bg-white">
       <h1 className="text-4xl md:text-7xl max-w-6xl font-bold mb-6  mx-auto">Accelerate Your Digital Growth with  <span className='text-orange-500'>Kanavu Labs.</span> </h1>
       <p className="max-w-2xl mx-auto text-gray-600 mb-8 text-xl">
         We are an agile team of passionate innovators dedicated to crafting digital products that solve complex business challenges and drive measurable results.

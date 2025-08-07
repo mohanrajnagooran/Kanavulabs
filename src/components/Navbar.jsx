@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full  z-50 md:fixed fixed top-0 left-0 bg-white justify-between">
-      <nav className="max-w-7xl mx-auto flex py-2  items-center justify-between">
+      <nav className="max-w-7xl mx-auto flex py-0  items-center justify-between">
         {/* Logo */}
         <div className="text-xl font-bold tracking-wide">
           <Link to='/' >

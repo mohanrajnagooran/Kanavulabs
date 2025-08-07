@@ -38,7 +38,7 @@ const Articles = () => {
   };
 
   return (
-    <section className="px-6 py-12">
+    <section className="px-6 py-5">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Heading + Navigation Buttons */}

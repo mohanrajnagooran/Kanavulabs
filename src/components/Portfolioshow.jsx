@@ -21,7 +21,7 @@ export default function Portfolioshow() {
       </div>
 
       {/* Card 1 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:mb-0 mb-5  bg-gray-200 rounded-b-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:mb-0 mb-5  bg-gray-100 rounded-b-xl">
         {/* Image */}
         <div className="w-full">
           <img
@@ -48,7 +48,7 @@ export default function Portfolioshow() {
       </div>
 
       {/* Card 2 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-200 rounded-b-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-100 rounded-b-xl">
         {/* Content */}
         <div className="w-full order-2 md:order-1 p-2">
           <p className="text-blue-600 font-bold mb-2 text-xl md:text-2xl">
