@@ -4,25 +4,25 @@ const services = [
   {
     title: "Digital Marketing Services",
     description:
-      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn’t guesswork; it’s a measurable strategy, giving you clearer insights and control over your advertising spend. Stop paying for exposure; start paying for potential customers ready to engage.",
+      "Our digital marketing services help you reach the right audience at the right time. From SEO to social media and paid campaigns, we craft data-driven strategies that boost visibility, drive qualified traffic, and turn clicks into loyal customers for sustainable business growth.",
     image: image,
   },
   {
     title: "Software Development",
     description:
-      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn’t guesswork; it’s a measurable strategy, giving you clearer insights and control over your advertising spend.",
+      "We build robust, scalable, and user-friendly software tailored to your business needs. From web apps to mobile solutions, our development process ensures quality, efficiency, and seamless performance—empowering you to streamline operations, solve complex problems, and stay ahead in a rapidly evolving digital world.",
     image: image,
   },
   {
     title: "AR, VR and Mixed Reality",
     description:
-      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. Stop paying for exposure; start paying for potential customers ready to engage.",
+      "We craft immersive AR, VR, and Mixed Reality experiences that transform how users interact with digital environments. From training simulations to interactive product showcases, our solutions blend the virtual and physical worlds to engage audiences, boost retention, and deliver innovative business outcomes.",
     image: image,
   },
   {
     title: "Artificial Intelligence",
     description:
-      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn’t guesswork; it’s a measurable strategy, giving you clearer insights and control over your advertising spend.",
+      "We build smart AI-driven solutions that help businesses automate tasks, gain actionable insights, and make intelligent decisions. From machine learning models to natural language processing and predictive analytics, our AI capabilities drive innovation, improve efficiency, and give you a competitive edge in your industry.",
     image: image,
   },
 ];

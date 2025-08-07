@@ -58,8 +58,8 @@ const Articles = () => {
             <button
               onClick={prev}
               disabled={current === 0}
-              className={`p-3 rounded-full border border-gray-300 hover:bg-gray-100 transition ${
-                current === 0 ? "opacity-40 cursor-not-allowed" : ""
+              className={`p-3 rounded-md border border-black transition ${
+                current === 0 ? "opacity-100 " : "text-white bg-black"
               }`}
               aria-label="Previous"
             >
@@ -68,8 +68,8 @@ const Articles = () => {
             <button
               onClick={next}
               disabled={current + visibleCount >= articles.length}
-              className={`p-3 rounded-full border border-gray-300 hover:bg-gray-100 transition ${
-                current + visibleCount >= articles.length ? "opacity-40 cursor-not-allowed" : ""
+              className={`p-3 rounded-md border border-black transition ${
+                current + visibleCount >= articles.length ? "opacity-100 " : "text-white bg-black"
               }`}
               aria-label="Next"
             >

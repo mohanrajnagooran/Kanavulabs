@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import workspeed1 from "../assets/workspeed1.png";
 import workspeed2 from "../assets/workspeed2.png";
 
 export default function Portfolioshow() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-16 bg-white">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 bg-white">
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
@@ -21,14 +22,16 @@ export default function Portfolioshow() {
       </div>
 
       {/* Card 1 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:mb-0 mb-5  bg-gray-100 rounded-b-xl">
-        {/* Image */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center md:mb-0 mb-5 bg-gray-100 rounded-xl">
+        {/* Image with Link */}
         <div className="w-full">
-          <img
-            src={workspeed1}
-            alt="Case Study 1"
-            className="w-full h-auto object-cover rounded-lg"
-          />
+          <Link to="/portfolio/project-1">
+            <img
+              src={workspeed1}
+              alt="Case Study 1"
+              className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300 cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Content */}
@@ -48,7 +51,7 @@ export default function Portfolioshow() {
       </div>
 
       {/* Card 2 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-100 rounded-b-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-100 rounded-b-xl mt-8">
         {/* Content */}
         <div className="w-full order-2 md:order-1 p-2">
           <p className="text-blue-600 font-bold mb-2 text-xl md:text-2xl">
@@ -64,13 +67,15 @@ export default function Portfolioshow() {
           </p>
         </div>
 
-        {/* Image */}
+        {/* Image with Link */}
         <div className="w-full order-1 md:order-2">
-          <img
-            src={workspeed2}
-            alt="Case Study 2"
-            className="w-full h-auto object-cover rounded-lg"
-          />
+          <Link to="/portfolio/project-2">
+            <img
+              src={workspeed2}
+              alt="Case Study 2"
+              className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300 cursor-pointer"
+            />
+          </Link>
         </div>
       </div>
     </section>

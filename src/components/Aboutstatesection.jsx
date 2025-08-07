@@ -30,10 +30,7 @@ const AboutStatsSection = () => {
               team of passionate innovators
             </h2>
             <p className="text-gray-700 text-base sm:text-lg md:text-xl">
-              We go beyond basic optimization, meticulously refining your content and
-              technical foundation. This ensures search engines effortlessly
-              discover and categorize your content while delivering a polished and
-              engaging experience to your users.
+              From humble beginnings in 2021, we’ve grown into a dynamic team delivering innovative digital solutions. Our passion for creativity and results drives everything we build for our clients.
             </p>
             <button className="bg-black text-white text-lg sm:text-xl px-10 py-3 mt-6 rounded-md hover:bg-orange-500 transition">
               Download our deck

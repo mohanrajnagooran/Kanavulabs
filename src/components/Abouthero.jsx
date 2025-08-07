@@ -18,9 +18,7 @@ const Abouthero = () => {
             amazing agency
           </h1>
           <p className="text-gray-600 mb-6 text-2xl">
-            Our passionate team crafts innovative solutions for complex business
-            challenges. We partner for success through digital products,
-            data-driven marketing, and expert problem-solving.
+            Founded in 2021, Kanavu Labs began with a mission to deliver digital excellence through collaboration. Today, we empower brands with innovative solutions tailored to meet real business needs and create lasting impact.
           </p>
 
           <Link

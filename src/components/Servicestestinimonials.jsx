@@ -5,18 +5,18 @@ import user from '../assets/user2.png';
 // Testimonials Data
 const testimonials = [
   {
-    name: 'Andy Smith',
-    username: '@andysmith',
+    name: 'Jane Doe',
+    username: '@Jane Doe',
     image: user,
     message:
-      'We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn’t guesswork.',
+      'Kanavu Labs helped us increase our website speed by 78%, which directly led to a 20% increase in conversions. Their technical expertise is unmatched.',
   },
   {
-    name: 'Sarah Johnson',
-    username: '@sarahj',
+    name: 'John Smith',
+    username: '@John Smith',
     image: user,
     message:
-      'Kanavu Labs helped us scale our startup within 6 months. Their tech and marketing strategies are top-notch.',
+      "The team's transparent process and clear communication made our project a breeze. We couldn't be happier with our new app and the results it's generating.",
   },
   {
     name: 'Michael Lee',

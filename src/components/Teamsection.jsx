@@ -40,16 +40,13 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="py-20 bg-white px-6">
+    <section className="py-5 bg-white px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-3">
           Meet the amazing team behind our agency
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-          We go beyond basic optimization, meticulously refining your content and technical
-          foundation. This ensures search engines effortlessly find and showcase your business,
-          driving highly relevant potential customers directly to you. Stop competing for visibility;
-          start dominating it.
+        <p className="text-gray-600 max-w-3xl mx-auto mb-8">
+          Our talented team is a blend of creative thinkers, developers, and strategists. Each member brings unique skills and passion, working together to deliver powerful digital solutions that drive results for our clients.
         </p>
 
         {/* Grid */}
