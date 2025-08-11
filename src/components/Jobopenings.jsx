@@ -22,7 +22,7 @@ const jobs = [
 
 export default function Jobopenings() {
   return (
-    <section className="bg-black text-white py-16 px-4">
+    <section className="bg-black text-white py-16 px-4 mb-0.5">
       <div className="max-w-7xl mx-auto p-8">
         {/* Section Header */}
         <div className="text-center mb-12">
