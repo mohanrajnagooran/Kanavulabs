@@ -5,6 +5,7 @@ import Careershome from '../components/Careershome'
 import BenefitsSection from '../components/Benifitssection'
 import FeatureHighlight from '../components/FeatureHighlight'
 import Teamstrength from '../components/Teamstrength'
+import Jobopenings from '../components/Jobopenings'
 
 
 const Careers = () => {
@@ -15,6 +16,7 @@ const Careers = () => {
       <BenefitsSection/>
       <FeatureHighlight/>
       <Teamstrength/>
+      <Jobopenings/>
       <Footer/>
     </div>
   )
