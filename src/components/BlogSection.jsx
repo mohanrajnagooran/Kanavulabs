@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../assets/art1.png";
 import img2 from "../assets/blog1.png";
 import img3 from "../assets/blog2.png";
 import img4 from "../assets/blog4.png";
 import img5 from "../assets/blog4.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const featuredArticle = {
   image: img1,
@@ -53,16 +55,23 @@ const blogList = [
 ];
 
 const BlogSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: false, mirror: true });
+  }, []);
+
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-5xl font-bold text-center mb-12">
+        <h2
+          className="text-3xl sm:text-5xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
           Articles & Resources
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Featured Article */}
-          <div className="flex flex-col">
+          <div className="flex flex-col" data-aos="fade-right">
             <img
               src={featuredArticle.image}
               alt="Featured"
@@ -83,11 +92,13 @@ const BlogSection = () => {
           </div>
 
           {/* Blog List */}
-          <div className="space-y-6">
-            {blogList.map((item) => (
+          <div className="space-y-6" data-aos="fade-left">
+            {blogList.map((item, idx) => (
               <div
                 key={item.id}
                 className="flex flex-col sm:flex-row gap-4 border-b pb-4"
+                data-aos="fade-up"
+                data-aos-delay={idx * 150} // stagger animation
               >
                 <img
                   src={item.image}

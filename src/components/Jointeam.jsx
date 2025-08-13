@@ -1,13 +1,29 @@
-import React from 'react'
-import jointeam from '../assets/jointeam.png'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import jointeam from "../assets/jointeam.png";
 
 const Jointeam = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false, // animate every time
+      mirror: true, // trigger animation on scroll up
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="bg-[#0F0F0F] text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
+        
         {/* Left Image */}
-        <div className="flex justify-center md:justify-end p-6 md:p-12">
+        <div
+          className="flex justify-center md:justify-end p-6 md:p-12"
+          data-aos="fade-right"
+        >
           <img
             src={jointeam}
             alt="Handshake illustration"
@@ -16,7 +32,11 @@ const Jointeam = () => {
         </div>
 
         {/* Right Text */}
-        <div className="text-center md:text-left px-6 md:px-10 py-10 md:py-20 space-y-6">
+        <div
+          className="text-center md:text-left px-6 md:px-10 py-10 md:py-20 space-y-6"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Ready to start <br className="hidden sm:inline" />
             working together <br className="hidden sm:inline" />
@@ -31,7 +51,7 @@ const Jointeam = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Jointeam
+export default Jointeam;

@@ -1,4 +1,7 @@
-import started from '../assets/started.png'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import started from "../assets/started.png";
 
 const stats = [
   { label: "Successful Work", value: "300+" },
@@ -8,15 +11,34 @@ const stats = [
 ];
 
 const AboutStatsSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false, // animate on both down & up
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="bg-white py-16 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Stats Row */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 text-center gap-6 mb-16">
           {stats.map((item, index) => (
-            <div key={index} className="mb-6">
-              <h3 className="text-4xl sm:text-5xl font-bold text-orange-500">{item.value}</h3>
-              <p className="text-lg sm:text-xl font-semibold text-black mt-2">{item.label}</p>
+            <div
+              key={index}
+              className="mb-6"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+            >
+              <h3 className="text-4xl sm:text-5xl font-bold text-orange-500">
+                {item.value}
+              </h3>
+              <p className="text-lg sm:text-xl font-semibold text-black mt-2">
+                {item.label}
+              </p>
             </div>
           ))}
         </div>
@@ -24,7 +46,11 @@ const AboutStatsSection = () => {
         {/* About Message */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/* Left Text */}
-          <div className="text-center md:text-left px-2">
+          <div
+            className="text-center md:text-left px-2"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-snug">
               We started in 2021 as a small <br className="hidden sm:inline" />
               team of passionate innovators
@@ -32,13 +58,21 @@ const AboutStatsSection = () => {
             <p className="text-gray-700 text-base sm:text-lg md:text-xl">
               From humble beginnings in 2021, we’ve grown into a dynamic team delivering innovative digital solutions. Our passion for creativity and results drives everything we build for our clients.
             </p>
-            <button className="bg-black text-white text-lg sm:text-xl px-10 py-3 mt-6 rounded-md hover:bg-orange-500 transition">
+            <button
+              className="bg-black text-white text-lg sm:text-xl px-10 py-3 mt-6 rounded-md hover:bg-orange-500 transition"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
               Download our deck
             </button>
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-center">
+          <div
+            className="flex justify-center"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <img
               src={started}
               alt="Team working"

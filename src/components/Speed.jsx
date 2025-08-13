@@ -1,32 +1,50 @@
-import React from 'react'
-import speed from '../assets/speed.png'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import speed from "../assets/speed.png";
 
-export default function Speed()  {
+export default function Speed() {
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
-    <div className="max-w-7xl bg-white  mx-auto p-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-black rounded-xl overflow-hidden">
+    <div className="max-w-7xl bg-white mx-auto p-4">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-black rounded-xl overflow-hidden"
+        data-aos="fade-up"
+      >
         {/* Left Section */}
-        <div className="text-white px-8 py-12 space-y-6">
+        <div
+          className="text-white px-8 py-12 space-y-6"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <h2 className="text-3xl md:text-4xl font-bold">
             Let’s work together
           </h2>
           <p className="text-gray-300 max-w-md">
-            We adapt quickly to market changes and leverage the latest technologies to keep you ahead of the competition.
+            We adapt quickly to market changes and leverage the latest
+            technologies to keep you ahead of the competition.
           </p>
-          <button className="border text-white px-6 py-2 rounded-md hover:bg-orange-400 transition-all">
+          <button className="border border-white text-white px-6 py-2 rounded-md hover:bg-orange-400 hover:border-orange-400 transition-all duration-300">
             Contact Us
           </button>
         </div>
 
         {/* Right Section */}
-        <div className="flex justify-center items-center  h-full ">
+        <div
+          className="flex justify-center items-center h-full"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <img
             src={speed}
             alt="Rocket Illustration"
-            className=""
+            className="max-w-full hover:scale-105 transition-transform duration-500"
           />
         </div>
       </div>
     </div>
-  )
-};
+  );
+}

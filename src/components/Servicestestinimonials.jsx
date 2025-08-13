@@ -1,5 +1,7 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import user from '../assets/user2.png';
 
 // Testimonials Data
@@ -36,27 +38,44 @@ const testimonials = [
 
 const Servicestestinimonials = () => {
   const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false, mirror: true });
+  }, []);
 
   const prevSlide = () => {
-    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+      setFade(true);
+    }, 200);
   };
 
   const nextSlide = () => {
-    setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+      setFade(true);
+    }, 200);
   };
 
   const current = testimonials[index];
 
   return (
     <section className="bg-white py-12 px-4">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center" data-aos="fade-up">
         <h2 className="text-3xl md:text-4xl font-bold mb-10">
           What our great customers say
         </h2>
 
-        <div className="bg-gray-50 p-6 md:p-10 rounded-lg flex flex-col md:flex-row items-center justify-between gap-8 transition-all duration-300">
+        <div
+          className={`bg-gray-50 p-6 md:p-10 rounded-lg flex flex-col md:flex-row items-center justify-between gap-8 transition-opacity duration-300 ${
+            fade ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
           {/* Avatar */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0" data-aos="zoom-in" data-aos-delay="100">
             <img
               src={current.image}
               alt={current.name}
@@ -65,7 +84,7 @@ const Servicestestinimonials = () => {
           </div>
 
           {/* Message + Info */}
-          <div className="flex-1 text-left">
+          <div className="flex-1 text-left" data-aos="fade-left" data-aos-delay="200">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               “{current.message}”
             </p>
@@ -74,7 +93,7 @@ const Servicestestinimonials = () => {
           </div>
 
           {/* Controls */}
-          <div className="flex md:flex-col gap-4">
+          <div className="flex md:flex-col gap-4" data-aos="fade-right" data-aos-delay="300">
             <button
               onClick={prevSlide}
               className="p-3 border border-black rounded-md hover:bg-black hover:text-white transition"

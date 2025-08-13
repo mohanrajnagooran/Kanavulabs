@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapPinIcon, ClockIcon } from "@heroicons/react/24/outline";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const jobs = [
   {
@@ -7,7 +9,7 @@ const jobs = [
     type: "Full Time",
     title: "Junior Search Engine Optimisation Associate",
     description:
-      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn't guesswork; it's a measurable strategy. We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant.",
+      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn't guesswork; it's a measurable strategy.",
     link: "#",
   },
   {
@@ -15,24 +17,26 @@ const jobs = [
     type: "Full Time",
     title: "Junior Search Engine Optimisation Associate",
     description:
-      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn't guesswork; it's a measurable strategy. We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant.",
+      "We meticulously target specific keywords your audience uses, ensuring every click brings highly relevant traffic directly to your site. This isn't guesswork; it's a measurable strategy.",
     link: "#",
   },
 ];
 
 export default function Jobopenings() {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: false, mirror: true });
+  }, []);
+
   return (
     <section className="bg-black text-white py-16 px-4 mb-0.5">
-      <div className="max-w-7xl mx-auto p-8">
+      <div className="max-w-7xl mx-auto ">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div data-aos="fade-up" className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Open positions</h2>
           <p className="text-gray-300 mt-4 max-w-3xl mx-auto">
             We meticulously target specific keywords your audience uses,
             ensuring every click brings highly relevant traffic directly to your
-            site. This isn't guesswork; it's a measurable strategy. We
-            meticulously target specific keywords your audience uses, ensuring
-            every click brings highly relevant.
+            site. This isn't guesswork; it's a measurable strategy.
           </p>
         </div>
 
@@ -41,7 +45,9 @@ export default function Jobopenings() {
           {jobs.map((job, idx) => (
             <div
               key={idx}
-              className="bg-white text-black rounded-lg shadow-lg p-6 flex flex-col justify-between"
+              data-aos="fade-up"
+              data-aos-delay={idx * 200}
+              className="bg-white text-black rounded-lg shadow-md p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               {/* Location & Type */}
               <div className="flex items-center text-sm text-gray-600 mb-4">
@@ -58,7 +64,7 @@ export default function Jobopenings() {
               </h3>
 
               {/* Job Description */}
-              <p className="text-gray-700 text-sm md:text-base mb-6">
+              <p className="text-gray-700 text-sm md:text-base mb-6 leading-relaxed">
                 {job.description}
               </p>
 

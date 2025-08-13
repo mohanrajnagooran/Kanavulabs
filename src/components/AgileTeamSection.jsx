@@ -1,4 +1,11 @@
-import { ChartBarIcon, FolderIcon, CubeIcon } from "@heroicons/react/24/outline";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {
+  ChartBarIcon,
+  FolderIcon,
+  CubeIcon,
+} from "@heroicons/react/24/outline";
 
 const features = [
   {
@@ -22,11 +29,24 @@ const features = [
 ];
 
 const AgileTeamSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false,
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="bg-white py-2 px-4 mb-10 lg:py-10">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+        <h2
+          className="text-3xl sm:text-4xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
           We are an agile team of <br /> passionate innovators
         </h2>
 
@@ -36,6 +56,8 @@ const AgileTeamSection = () => {
             <div
               key={idx}
               className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay={idx * 200} // stagger animation
             >
               <item.icon className="w-12 h-12 text-black mb-6" />
               <h3 className="text-xl font-bold mb-3">{item.title}</h3>

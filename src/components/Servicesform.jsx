@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Servicesform = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false,  // allow repeat animation
+      mirror: true, // animate on scroll up
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="py-0 md:py-12 bg-white px-4">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        
         {/* Left Content */}
-        <div className='md:px-6'>
+        <div className="md:px-6" data-aos="fade-right">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-snug">
             Fill the form to get a <br className="hidden sm:block" /> free consultation now
           </h2>
@@ -27,7 +40,7 @@ const Servicesform = () => {
         </div>
 
         {/* Right Form */}
-        <form className="space-y-6 w-full">
+        <form className="space-y-6 w-full" data-aos="fade-left">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-lg font-medium mb-1">Full name</label>

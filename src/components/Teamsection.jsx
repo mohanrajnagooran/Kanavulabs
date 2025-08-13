@@ -1,5 +1,6 @@
-// src/components/TeamSection.jsx
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const teamMembers = [
@@ -39,22 +40,44 @@ const teamMembers = [
 ];
 
 const TeamSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false, // allow animation both ways
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="py-5 bg-white px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2
+          className="text-3xl md:text-4xl font-bold mb-3"
+          data-aos="fade-down"
+        >
           Meet the amazing team behind our agency
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-          Our talented team is a blend of creative thinkers, developers, and strategists. Each member brings unique skills and passion, working together to deliver powerful digital solutions that drive results for our clients.
+        <p
+          className="text-gray-600 max-w-3xl mx-auto mb-8"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Our talented team is a blend of creative thinkers, developers, and
+          strategists. Each member brings unique skills and passion, working
+          together to deliver powerful digital solutions that drive results for
+          our clients.
         </p>
 
         {/* Grid */}
         <div className="grid md:grid-cols-3 gap-10">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, index) => (
             <div
               key={member.id}
               className="bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              data-aos="zoom-in"
+              data-aos-delay={index * 200}
             >
               <img
                 src={member.image}
@@ -71,7 +94,7 @@ const TeamSection = () => {
                     href={member.socials.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-black text-white p-2 rounded hover:bg-opacity-80"
+                    className="bg-black text-white p-2 rounded hover:bg-opacity-80 transition"
                   >
                     <FaFacebookF size={16} />
                   </a>
@@ -79,7 +102,7 @@ const TeamSection = () => {
                     href={member.socials.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-black text-white p-2 rounded hover:bg-opacity-80"
+                    className="bg-black text-white p-2 rounded hover:bg-opacity-80 transition"
                   >
                     <FaInstagram size={16} />
                   </a>
@@ -87,7 +110,7 @@ const TeamSection = () => {
                     href={member.socials.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-black text-white p-2 rounded hover:bg-opacity-80"
+                    className="bg-black text-white p-2 rounded hover:bg-opacity-80 transition"
                   >
                     <FaLinkedinIn size={16} />
                   </a>
@@ -96,8 +119,16 @@ const TeamSection = () => {
             </div>
           ))}
         </div>
-        <div className="mt-10">
-            <button className="md:text-2xl border-2 px-8 py-2 rounded-lg hover:text-orange-400">Join the team</button>
+
+        {/* Join button */}
+        <div
+          className="mt-10"
+          data-aos="fade-up"
+          data-aos-delay={teamMembers.length * 200}
+        >
+          <button className="md:text-2xl border-2 px-8 py-2 rounded-lg hover:text-orange-400 transition">
+            Join the team
+          </button>
         </div>
       </div>
     </section>

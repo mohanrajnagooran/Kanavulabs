@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import blog1 from "../assets/blog1.png";
 import blog2 from "../assets/blog1.png";
 import blog3 from "../assets/blog1.png";
 import blog4 from "../assets/blog1.png";
 import blog5 from "../assets/blog1.png";
 import blog6 from "../assets/blog1.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const blogPosts = [
   {
@@ -58,13 +60,27 @@ const blogPosts = [
 ];
 
 const Latestarticle = () => {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: false, mirror: true });
+  }, []);
+
   return (
     <section className="px-4 md:px-6 max-w-7xl mx-auto mb-20">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">Latest Articles</h2>
+      <h2
+        className="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left"
+        data-aos="fade-up"
+      >
+        Latest Articles
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {blogPosts.map((post) => (
-          <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition">
+        {blogPosts.map((post, index) => (
+          <div
+            key={post.id}
+            className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition-transform transform hover:-translate-y-2"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+          >
             <img
               src={post.image}
               alt={post.title}

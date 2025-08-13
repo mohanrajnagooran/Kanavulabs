@@ -1,5 +1,6 @@
-// src/components/CoreValuesSection.jsx
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   FaStar,
   FaCubes,
@@ -49,14 +50,35 @@ const values = [
 ];
 
 const CoreValuesSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false, // allow animations again when scrolling back up
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section className="bg-white py-20 px-8">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          The core values<br />that drive everything we do
+        <h2
+          className="text-3xl md:text-4xl font-bold mb-4"
+          data-aos="fade-down"
+        >
+          The core values
+          <br /> that drive everything we do
         </h2>
-        <p className="text-black max-w-4xl mx-auto mb-12 text-lg">
-          Our core values—innovation, integrity, collaboration, and excellence—shape every project we undertake. They guide our decisions, inspire our creativity, and ensure we consistently deliver solutions that make a real impact for our clients and partners.
+        <p
+          className="text-black max-w-4xl mx-auto mb-12 text-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Our core values—innovation, integrity, collaboration, and
+          excellence—shape every project we undertake. They guide our decisions,
+          inspire our creativity, and ensure we consistently deliver solutions
+          that make a real impact for our clients and partners.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
@@ -64,6 +86,8 @@ const CoreValuesSection = () => {
             <div
               key={index}
               className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition text-left"
+              data-aos="zoom-in"
+              data-aos-delay={index * 150} // stagger effect
             >
               <div className="mb-4">{value.icon}</div>
               <h3 className="text-xl font-bold mb-2">{value.title}</h3>
