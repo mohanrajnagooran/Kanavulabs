@@ -19,9 +19,7 @@ const Footer = () => {
 
           {/* Description */}
           <p className="text-gray-300 text-base sm:text-lg mb-6 max-w-xl">
-            We meticulously target specific keywords your audience uses,
-            ensuring every click brings highly relevant traffic directly to your
-            site. This isn't guesswork.
+            We deliver innovative digital marketing and software development solutions that boost visibility, engage audiences, and streamline operations—driving growth, efficiency, and lasting business success.
           </p>
 
           {/* Contact Info */}
