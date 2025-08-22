@@ -6,9 +6,12 @@ const Contacthero = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
       {/* Top Section - Heading + Contact Info */}
-      <div className="flex flex-col px-10 md:flex-row md:items-center mb-12 gap-6 md:gap-20">
+      <div
+        className="flex flex-col px-10 md:flex-row md:items-center mb-12 gap-6 md:gap-20"
+        data-aos="fade-up"
+      >
         {/* Text */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left" data-aos="fade-right">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get in touch with us
           </h2>
@@ -19,7 +22,7 @@ const Contacthero = () => {
         </div>
 
         {/* Contact Details */}
-        <div className="space-y-6 text-left">
+        <div className="space-y-6 text-left" data-aos="fade-left">
           <div className="flex items-start gap-4">
             <EnvelopeIcon className="w-10 h-10 text-white rounded-md p-2 bg-black" />
             <div>
@@ -38,9 +41,12 @@ const Contacthero = () => {
       </div>
 
       {/* Bottom Section - Image + Form */}
-      <div className="flex flex-col md:flex-row items-start gap-12">
+      <div
+        className="flex flex-col md:flex-row items-start gap-12"
+        data-aos="zoom-in-up"
+      >
         {/* Left - Image */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2" data-aos="fade-right">
           <img
             src={contactImage}
             alt="Contact Illustration"
@@ -49,9 +55,9 @@ const Contacthero = () => {
         </div>
 
         {/* Right - Form */}
-        <form className="w-full md:w-1/2 space-y-6">
+        <form className="w-full md:w-1/2 space-y-6" data-aos="fade-left">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <label className="block mb-1 text-xl font-medium">Name</label>
               <input
                 type="text"
@@ -59,7 +65,7 @@ const Contacthero = () => {
                 className="w-full px-4 py-2 text-xl border border-gray-300 rounded-md"
               />
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <label className="block mb-1 text-xl font-medium">Email</label>
               <input
                 type="email"
@@ -67,7 +73,7 @@ const Contacthero = () => {
                 className="w-full px-4 py-2 text-xl border border-gray-300 rounded-md"
               />
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
               <label className="block mb-1 text-xl font-medium">Phone</label>
               <input
                 type="tel"
@@ -75,7 +81,7 @@ const Contacthero = () => {
                 className="w-full px-4 py-2 text-xl border border-gray-300 rounded-md"
               />
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="400">
               <label className="block mb-1 text-xl font-medium">Company</label>
               <input
                 type="text"
@@ -85,7 +91,7 @@ const Contacthero = () => {
             </div>
           </div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="500">
             <label className="block mb-1 text-xl font-medium">
               Leave us your message
             </label>
@@ -99,6 +105,8 @@ const Contacthero = () => {
           <button
             type="submit"
             className="bg-black text-xl text-white px-6 py-3 rounded-md hover:bg-orange-500"
+            data-aos="flip-up"
+            data-aos-delay="600"
           >
             Send Message
           </button>
