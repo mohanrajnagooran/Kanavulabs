@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Aboutlocation from '../components/Aboutlocation'
 import Contacthero from '../components/Contacthero'
 import FaqSection from '../components/FaqSection'
+import AOS from "aos";
 
 const Contactus = () => {
   useEffect(() => {
