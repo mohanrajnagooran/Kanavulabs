@@ -70,7 +70,20 @@ const Footer = () => {
               <FaYoutube className="w-5 h-5" />
             </a>
           </div>
+          <div className="flex  flex-wrap gap-2 pt-10">
+            <a href="https://merchant.razorpay.com/policy/RT0F8d38hgnC3l/shipping" target="blank" className="bg-[#1e1e1e] p-3 rounded-md hover:bg-orange-500 transition">
+              Shipping
+            </a>
+            <a href="https://merchant.razorpay.com/policy/RT0F8d38hgnC3l/terms" target="blank" className="bg-[#1e1e1e] p-3 rounded-md hover:bg-orange-500 transition">
+              Terms and Conditions
+            </a>
+            <a href="https://merchant.razorpay.com/policy/RT0F8d38hgnC3l/refund" target="blank" className="bg-[#1e1e1e] p-3 rounded-md hover:bg-orange-500 transition">
+              Cancellation & Refunds
+            </a>
         </div>
+
+        </div>
+        
       </div>
 
       {/* Bottom Bar */}
