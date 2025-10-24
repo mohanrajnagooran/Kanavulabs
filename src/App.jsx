@@ -10,11 +10,6 @@ import Careers from "./pages/Careers";
 import Comingsoon from "./pages/Comingsoon";
 import Notfound from "./pages/Notfound";
 import ScrollToTop from "./components/ScrollToTop";
-import AdminLogin from "./pages/admin/AdminLogin";
-import AdminLayout from "./layouts/AdminLayout";
-import UserManagement from "./pages/admin/UserManagement";
-import AdminDashboard from "./pages/admin/AdminDashboard";
-import WebsiteContent from "./pages/admin/WebsiteContent";
 
 const App = () => {
   return (
@@ -31,16 +26,6 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/comingsoon" element={<Comingsoon />} />
         <Route path="*" element={<Notfound />} />
-
-        {/* Admin login */}
-        <Route path="/admin" element={<AdminLogin />} />
-
-        {/* Admin layout with sidebar */}
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route path="dashboard" index element={<AdminDashboard />} /> {/* default dashboard */}
-          <Route path="users" element={<UserManagement />} />
-          <Route path="website" element={<WebsiteContent />} />
-        </Route>
       </Routes>
     </Router>
   );
